@@ -16,7 +16,7 @@
 }
 
 /* Layout */
-/* main {
+main {
     position: relative;
     width: 100dvw;
     height: 100dvh;
@@ -37,7 +37,7 @@ main .background-pattern {
     left: 0;
     width: 100%;
     z-index: 0;
-} */
+}
 
 #container {
     width: 85%;
@@ -86,7 +86,7 @@ main .background-pattern {
     cursor: pointer;
 }
 
-#container li p {
+/* #container li p {
     font-size: 16px;
     font-weight: 400;
     color: var(--tertiary-color);
@@ -94,18 +94,18 @@ main .background-pattern {
     overflow: hidden;
     opacity: 0;
     transition: max-height 0.5s, opacity 0.5s ease;
-}
+} */
 
 /* Dynamic Styles */
 #container li.active h2 {
     margin: 0;
 }
 
-#container li.active p {
+/* #container li.active p {
     margin: 1rem 0;
     max-height: 500px;
     opacity: 1;
-}
+} */
 
 #container li:not(.active) h2:hover {
     color: var(--active-color) !important;
