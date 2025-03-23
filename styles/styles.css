@@ -16,7 +16,7 @@
 }
 
 /* Layout */
-/* main {
+main {
     position: relative;
     width: 100dvw;
     height: 100dvh;
@@ -41,7 +41,7 @@ main .background-pattern {
     z-index: 0;
 }
 
-#container {
+/* #container {
     width: 85%;
     max-width: 615px;
     background-color: var(--primary-color);
