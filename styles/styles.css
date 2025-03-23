@@ -44,7 +44,7 @@ main .background-pattern {
 #container {
     width: 85%;
     height: fit-content;
-    align-self: center;
+    /* align-self: center; */
     max-width: 615px;
     background-color: var(--primary-color);
     border-radius: 10px;
