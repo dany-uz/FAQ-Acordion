@@ -16,7 +16,7 @@
 }
 
 /* Layout */
-main {
+/* main {
     position: relative;
     width: 100dvw;
     height: 100dvh;
@@ -95,10 +95,10 @@ main .background-pattern {
     overflow: hidden;
     opacity: 0;
     transition: max-height 0.5s, opacity 0.5s ease;
-}
+} */
 
 /* Dynamic Styles */
-#container li.active h2 {
+/* #container li.active h2 {
     margin: 0;
 }
 
@@ -110,7 +110,7 @@ main .background-pattern {
 
 #container li:not(.active) h2:hover {
     color: var(--active-color) !important;
-}
+} */
 
 /* Attribution */
 .attribution {
