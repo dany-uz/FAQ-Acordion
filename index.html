@@ -23,6 +23,13 @@
 
         <title>Frontend Mentor | FAQ accordion</title>
 
+        <!-- PRELOAD IMAGES -->
+        <link
+            rel="preload"
+            href="assets/images/background-pattern-desktop.svg"
+            as="image"
+        />
+
         <!-- STYLES -->
         <link
             rel="preload"
@@ -33,13 +40,6 @@
         <noscript>
             <link rel="stylesheet" href="styles/styles.css" />
         </noscript>
-
-        <!-- PRELOAD IMAGES -->
-        <link
-            rel="preload"
-            href="assets/images/background-pattern-desktop.svg"
-            as="image"
-        />
     </head>
     <body>
         <main>
@@ -64,7 +64,7 @@
                                 class="expand"
                                 aria-hidden="true"
                                 aria-label="expand"
-                                src="assets/images/icon-minus.svg"
+                                src="assets/images/icon-plus.svg"
                                 role="presentation"
                                 width="30"
                                 height="30"
@@ -159,8 +159,6 @@
             function toggleAccordion(id) {
                 var accordion = document.getElementById(id);
                 var icon = document.querySelector(`#${id} img.expand`);
-
-                console.log(accordion);
 
                 accordion.classList.toggle("active");
                 icon.src = icon.src.includes("plus")

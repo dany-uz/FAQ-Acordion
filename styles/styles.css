@@ -15,20 +15,11 @@
     font-family: "Work Sans";
 }
 
-html {
-    min-width: 320px;
-}
-
-body {
-    min-width: 320px;
-}
-
 /* Layout */
 main {
     position: relative;
     width: 100dvw;
     height: 100dvh;
-    min-width: 320px;
     max-width: 1440px;
     background-color: var(--secondary-color);
     background-image: url("../assets/images/background-pattern-desktop.svg");
