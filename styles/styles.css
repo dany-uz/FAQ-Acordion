@@ -26,6 +26,8 @@ main {
     background-position: top;
     background-repeat: no-repeat;
     background-size: auto;
+    display: grid;
+    place-items: center;
     margin: 0 auto;
     padding: 2rem 0;
     overflow: auto;
@@ -41,7 +43,6 @@ main .background-pattern {
 
 #container {
     width: 85%;
-    height: fit-content;
     max-width: 615px;
     background-color: var(--primary-color);
     border-radius: 10px;
@@ -69,7 +70,7 @@ main .background-pattern {
     list-style: none;
 }
 
-#container ul li {
+#container ul li:not(:last-child) {
     border-bottom: 2px solid var(--secondary-color);
     margin: 1rem 0;
 }
