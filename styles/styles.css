@@ -16,7 +16,7 @@
 }
 
 /* Layout */
-main {
+/* main {
     position: relative;
     width: 100dvw;
     height: 100dvh;
@@ -26,8 +26,8 @@ main {
     background-position: top;
     background-repeat: no-repeat;
     background-size: auto;
-    /* display: grid; */
-    /* place-items: center; */
+    display: grid;
+    place-items: center;
     margin: 0 auto;
     padding: 2rem 0;
     overflow: auto;
@@ -92,11 +92,11 @@ main .background-pattern {
     font-size: 16px;
     font-weight: 400;
     color: var(--tertiary-color);
+    max-height: 0;
     overflow: hidden;
-    display: none;
     opacity: 0;
-    transition: opacity 0.3s ease;
-}
+    transition: max-height 0.5s, opacity 0.5s ease;
+} */
 
 /* Dynamic Styles */
 #container li.active h2 {
@@ -104,8 +104,8 @@ main .background-pattern {
 }
 
 #container li.active p {
-    display: block;
     margin: 1rem 0;
+    max-height: 500px;
     opacity: 1;
 }
 
