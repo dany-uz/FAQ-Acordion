@@ -24,7 +24,12 @@
         <title>Frontend Mentor | FAQ accordion</title>
 
         <!-- STYLES -->
-        <link rel="preload" href="styles/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <link
+            rel="preload"
+            href="styles/styles.css"
+            as="style"
+            onload="this.onload=null;this.rel='stylesheet'"
+        />
         <noscript>
             <link rel="stylesheet" href="styles/styles.css" />
         </noscript>
@@ -50,7 +55,7 @@
                 </h1>
 
                 <ul>
-                    <li id="what-is-frontend-mentor" class="active">
+                    <li id="what-is-frontend-mentor">
                         <h2
                             onclick="toggleAccordion('what-is-frontend-mentor')"
                         >
@@ -150,7 +155,7 @@
             >. Coded by <a href="https://github.com/dany-uz">dany-uz</a>.
         </footer>
 
-        <script>
+        <script defer>
             function toggleAccordion(id) {
                 var accordion = document.getElementById(id);
                 var icon = document.querySelector(`#${id} img.expand`);
@@ -162,6 +167,8 @@
                     ? "assets/images/icon-minus.svg"
                     : "assets/images/icon-plus.svg";
             }
+
+            toggleAccordion("what-is-frontend-mentor");
         </script>
     </body>
 </html>
