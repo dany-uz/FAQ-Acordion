@@ -1,48 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Frontend Mentor | FAQ accordion" />
+        <meta
+            name="keywords"
+            content="HTML, CSS, JavaScript, frontend, coding, challenge"
+        />
+        <meta
+            name="author"
+            content="dany-uz,
+            https://github.com/dany-uz"
+        />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | FAQ accordion</title>
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon-32x32.png"
+        />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+        <title>Frontend Mentor | FAQ accordion</title>
 
-  FAQs
+        <!-- STYLES -->
+        <link rel="preload" href="styles/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript>
+            <link rel="stylesheet" href="styles/styles.css" />
+        </noscript>
 
-  What is Frontend Mentor, and how will it help me?
+        <!-- PRELOAD IMAGES -->
+        <link
+            rel="preload"
+            href="assets/images/background-pattern-desktop.svg"
+            as="image"
+        />
+    </head>
+    <body>
+        <main>
+            <div id="container">
+                <h1>
+                    <img
+                        src="assets/images/icon-star.svg"
+                        role="presentation"
+                    />
+                    FAQs
+                </h1>
 
-  Frontend Mentor offers realistic coding challenges to help developers improve their 
-  frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
-  all levels and ideal for portfolio building.
+                <ul>
+                    <li id="what-is-frontend-mentor" class="active">
+                        <h2
+                            onclick="toggleAccordion('what-is-frontend-mentor')"
+                        >
+                            What is Frontend Mentor, and how will it help me?
+                            <img
+                                class="expand"
+                                aria-hidden="true"
+                                aria-label="expand"
+                                src="assets/images/icon-minus.svg"
+                                role="presentation"
+                                width="30"
+                                height="30"
+                            />
+                        </h2>
+                        <p>
+                            Frontend Mentor offers realistic coding challenges
+                            to help developers improve their frontend coding
+                            skills with projects in HTML, CSS, and JavaScript.
+                            It's suitable for all levels and ideal for portfolio
+                            building.
+                        </p>
+                    </li>
 
-  Is Frontend Mentor free?
+                    <li id="is-frontend-mentor-free">
+                        <h2
+                            onclick="toggleAccordion('is-frontend-mentor-free')"
+                        >
+                            Is Frontend Mentor free?
+                            <img
+                                class="expand"
+                                aria-hidden="true"
+                                aria-label="expand"
+                                src="assets/images/icon-plus.svg"
+                                role="presentation"
+                                width="30"
+                                height="30"
+                            />
+                        </h2>
+                        <p>
+                            Yes, Frontend Mentor offers both free and premium
+                            coding challenges, with the free option providing
+                            access to a range of projects suitable for all skill
+                            levels.
+                        </p>
+                    </li>
 
-  Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
-  option providing access to a range of projects suitable for all skill levels.
+                    <li id="can-i-use-projects">
+                        <h2 onclick="toggleAccordion('can-i-use-projects')">
+                            Can I use Frontend Mentor projects in my portfolio?
+                            <img
+                                class="expand"
+                                aria-hidden="true"
+                                aria-label="expand"
+                                src="assets/images/icon-plus.svg"
+                                role="presentation"
+                                width="30"
+                                height="30"
+                            />
+                        </h2>
+                        <p>
+                            Yes, you can use projects completed on Frontend
+                            Mentor in your portfolio. It's an excellent way to
+                            showcase your skills to potential employers!
+                        </p>
+                    </li>
 
-  Can I use Frontend Mentor projects in my portfolio?
+                    <li id="how-can-i-get-help">
+                        <h2 onclick="toggleAccordion('how-can-i-get-help')">
+                            How can I get help if I'm stuck on a challenge?
+                            <img
+                                class="expand"
+                                aria-hidden="true"
+                                aria-label="expand"
+                                src="assets/images/icon-plus.svg"
+                                role="presentation"
+                                width="30"
+                                height="30"
+                            />
+                        </h2>
+                        <p>
+                            The best place to get help is inside Frontend
+                            Mentor's Discord community. There's a help channel
+                            where you can ask questions and seek support from
+                            other community members.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </main>
 
-  Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
-  way to showcase your skills to potential employers!
+        <footer class="attribution">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by <a href="https://github.com/dany-uz">dany-uz</a>.
+        </footer>
 
-  How can I get help if I'm stuck on a Frontend Mentor challenge?
-  
-  The best place to get help is inside Frontend Mentor's Discord community. There's a help 
-  channel where you can ask questions and seek support from other community members.
+        <script>
+            function toggleAccordion(id) {
+                var accordion = document.getElementById(id);
+                var icon = document.querySelector(`#${id} img.expand`);
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+                console.log(accordion);
+
+                accordion.classList.toggle("active");
+                icon.src = icon.src.includes("plus")
+                    ? "assets/images/icon-minus.svg"
+                    : "assets/images/icon-plus.svg";
+            }
+        </script>
+    </body>
 </html>
