@@ -16,7 +16,7 @@
 }
 
 /* Layout */
-main {
+/* main {
     position: relative;
     width: 100dvw;
     height: 100dvh;
@@ -29,8 +29,6 @@ main {
     margin: 0 auto;
     padding: 2rem 0;
     overflow: auto;
-    display: flex;
-    justify-content: center;
 }
 
 main .background-pattern {
@@ -39,12 +37,11 @@ main .background-pattern {
     left: 0;
     width: 100%;
     z-index: 0;
-}
+} */
 
 #container {
     width: 85%;
     height: fit-content;
-    /* align-self: center; */
     max-width: 615px;
     background-color: var(--primary-color);
     border-radius: 10px;
