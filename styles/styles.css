@@ -92,10 +92,10 @@ main .background-pattern {
     font-size: 16px;
     font-weight: 400;
     color: var(--tertiary-color);
-    height: 0;
     overflow: hidden;
+    display: none;
     opacity: 0;
-    transition: height 0.5s, opacity 0.5s ease;
+    transition: opacity 0.3s ease;
 }
 
 /* Dynamic Styles */
@@ -104,8 +104,8 @@ main .background-pattern {
 }
 
 #container li.active p {
+    display: block;
     margin: 1rem 0;
-    height: 500px;
     opacity: 1;
 }
 
