@@ -70,7 +70,7 @@ main .background-pattern {
     list-style: none;
 }
 
-#container ul li:not(:last-child) {
+#container ul li {
     border-bottom: 2px solid var(--secondary-color);
     margin: 1rem 0;
 }
