@@ -26,6 +26,8 @@ main {
     background-position: top;
     background-repeat: no-repeat;
     background-size: auto;
+    display: grid;
+    place-items: center;
     margin: 0 auto;
     padding: 2rem 0;
     overflow: auto;
