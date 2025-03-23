@@ -16,7 +16,7 @@
 }
 
 /* Layout */
-/* main {
+main {
     position: relative;
     width: 100dvw;
     height: 100dvh;
@@ -26,8 +26,8 @@
     background-position: top;
     background-repeat: no-repeat;
     background-size: auto;
-    display: grid;
-    place-items: center;
+    /* display: grid; */
+    /* place-items: center; */
     margin: 0 auto;
     padding: 2rem 0;
     overflow: auto;
@@ -39,7 +39,7 @@ main .background-pattern {
     left: 0;
     width: 100%;
     z-index: 0;
-} */
+}
 
 #container {
     width: 85%;
